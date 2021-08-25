@@ -41,7 +41,10 @@ tw-story[tags~="outside"] {
 }
 
 
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="party" color="red"></tw-tag>,<tw-tag name="work" color="blue"></tw-tag>,<tw-tag name="wakeup" color="orange"></tw-tag>,<tw-tag name="room" color="red"></tw-tag><tw-passagedata pid="1" name="Onboard" tags="work" position="659,160.5" size="100,200">(text-style:&quot;bold&quot;,&quot;italic&quot;)+(align:&quot;&lt;==&gt;&quot;)+(box:&quot;=XXXXXXXX=&quot;)+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">var audio = document.createElement ('audio');
+audio.src = 'sounds/ALongWalk.mp3';
+audio.loop = true;
+audio.play();</script><tw-tag name="party" color="red"></tw-tag>,<tw-tag name="work" color="blue"></tw-tag>,<tw-tag name="wakeup" color="orange"></tw-tag>,<tw-tag name="room" color="red"></tw-tag><tw-passagedata pid="1" name="Onboard" tags="work" position="659,160.5" size="100,200">(text-style:&quot;bold&quot;,&quot;italic&quot;)+(align:&quot;&lt;==&gt;&quot;)+(box:&quot;=XXXXXXXX=&quot;)+
 (text-colour:white)+(background:(hsl:210,0.1034,0.2275,0.65))
 [Jefe: Gracias por venir a la entrevista, la universidad manda la lista de sus alumnos mas sobresaliente y entre ellos estabas tú, \
 el puesto que te ofrecemos es de una gran responsabilidad, \
@@ -101,6 +104,8 @@ no se preocupe!
 (align:&quot;==&gt;&quot;)+(box:&quot;=XXXXXXXXXX=&quot;)+(text-style:&quot;italic&quot;,&quot;smear&quot;)
 [le sonreí para disimular un poco los nervios que tenía]
 será perfecto
+(after: time + 3s, (cond: visits &gt; 0, 300ms, 0))[=
+(go-to:&quot;Reunión&quot;)
 =|
 &lt;br&gt;&lt;br&gt;&lt;br&gt;
 &lt;img height=&quot;500&quot; width=&quot;170&quot; src=&quot;images/Feliz.png&quot;&gt;
@@ -124,7 +129,7 @@ Compañer@: $name ¿Quieres salir a una reunión de despedida despues del almuer
 ---
 (text-style:&quot;bold&quot;,&quot;italic&quot;,&quot;shadow&quot;,&quot;fade-in-out&quot;)+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;===XXXXXXXXXXXXXX===&quot;)[=
 (link:&quot;Ir a la reunión&quot;)[(go-to:&quot;Compartir 1&quot;)]
-(link:&quot;No ir a la reunión&quot;)[(go-to:&quot;Universidad&quot;)]</tw-passagedata><tw-passagedata pid="11" name="freelance2" tags="room" position="1216.3999938964844,539" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="12" name="Sera un placer trabajar con ustedes" tags="" position="658,413.5" size="100,100">(go-to:&quot;Contrato&quot;)</tw-passagedata><tw-passagedata pid="13" name="Gracias, pero no es el trabajo que busco" tags="" position="471,411.5" size="100,100">(go-to:&quot;Freelance1&quot;)</tw-passagedata><tw-passagedata pid="14" name="Muchas gracias, si me lo permiten trabajare con ustedes y a la par trabajare en mi proyecto persona" tags="" position="824,415.5" size="100,100">(go-to:&quot;Contrato&quot;)</tw-passagedata><tw-passagedata pid="15" name="Entregare mis reportes impecables" tags="room" position="612,1052.3999938964844" size="100,100"> ¡no puedo descansar ahora!, ¡es un trabajo muy importante!
+(link:&quot;No ir a la reunión&quot;)[(go-to:&quot;Universidad&quot;)]</tw-passagedata><tw-passagedata pid="11" name="freelance2" tags="room" position="1216.3999938964844,539" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="12" name="Sera un placer trabajar con ustedes" tags="" position="658,413.5" size="100,100">(go-to:&quot;Contrato&quot;)</tw-passagedata><tw-passagedata pid="13" name="Gracias, pero no es el trabajo que busco" tags="" position="471,411.5" size="100,100">(go-to:&quot;Freelance1&quot;)</tw-passagedata><tw-passagedata pid="14" name="Muchas gracias, si me lo permiten trabajare con ustedes y a la par trabajare en mi proyecto persona" tags="" position="824,415.5" size="100,100">(go-to:&quot;Contrato&quot;)</tw-passagedata><tw-passagedata pid="15" name="Entregare mis reportes impecables" tags="room" position="568,1031.3999938964844" size="100,100"> ¡no puedo descansar ahora!, ¡es un trabajo muy importante!
  =||=
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXXXXXX=&quot;)+(text-style:&quot;italic&quot;,&quot;smear&quot;,&quot;sway&quot;)
 [ *Al dia siguiente...*] (after: time + 2s, (cond: visits &gt; 0, 200ms, 0))[=
@@ -136,7 +141,7 @@ cuando entré al trabajo todos mis amigos se acercaron para darme ánimos, sin e
 =|=
 &lt;br&gt;&lt;br&gt;&lt;br&gt;
 &lt;img height=&quot;500&quot; width=&quot;170&quot; src=&quot;images/Feliz.png&quot;&gt;
-|==|</tw-passagedata><tw-passagedata pid="16" name="Lo hare solo para presentar" tags="" position="881,1021.3999938964844" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="17" name="No tengo ganas de hacer nada realmente" tags="" position="743,1085.3999938964844" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+|==|</tw-passagedata><tw-passagedata pid="16" name="Lo hare solo para presentar" tags="" position="1018,1001.3999938964844" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="17" name="No tengo ganas de hacer nada realmente" tags="" position="773,1081.3999938964844" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
